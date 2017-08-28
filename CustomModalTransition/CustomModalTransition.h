@@ -7,9 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "UICustomTransitionOption.h"
-#import "TransitorHelper.h"
-
 
 //! Project version number for CustomModalTransition.
 FOUNDATION_EXPORT double CustomModalTransitionVersionNumber;
@@ -18,5 +15,6 @@ FOUNDATION_EXPORT double CustomModalTransitionVersionNumber;
 FOUNDATION_EXPORT const unsigned char CustomModalTransitionVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <CustomModalTransition/PublicHeader.h>
-
+#import <CustomModalTransition/UICustomTransitionOption.h>"
+#import <CustomModalTransition/TransitorHelper.h>"
 
