@@ -1,0 +1,331 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7E855F301F53D54E00169A5A /* CustomModalTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E855F2E1F53D54E00169A5A /* CustomModalTransition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E855F3D1F53D58300169A5A /* CustomSizeModalBaseController.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E855F361F53D58300169A5A /* CustomSizeModalBaseController.h */; };
+		7E855F3E1F53D58300169A5A /* CustomSizeModalBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E855F371F53D58300169A5A /* CustomSizeModalBaseController.m */; };
+		7E855F3F1F53D58300169A5A /* CustomSizeModalController.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E855F381F53D58300169A5A /* CustomSizeModalController.h */; };
+		7E855F401F53D58300169A5A /* CustomSizeModalController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E855F391F53D58300169A5A /* CustomSizeModalController.m */; };
+		7E855F411F53D58300169A5A /* TransitorHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E855F3A1F53D58300169A5A /* TransitorHelper.h */; };
+		7E855F421F53D58300169A5A /* TransitorHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E855F3B1F53D58300169A5A /* TransitorHelper.m */; };
+		7E855F431F53D58300169A5A /* UICustomTransitionOption.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E855F3C1F53D58300169A5A /* UICustomTransitionOption.h */; };
+		7E855F4F1F53E1A500169A5A /* CustomModalTransition.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 7E855F4E1F53E1A500169A5A /* CustomModalTransition.podspec */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7E855F2B1F53D54D00169A5A /* CustomModalTransition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CustomModalTransition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E855F2E1F53D54E00169A5A /* CustomModalTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomModalTransition.h; sourceTree = "<group>"; };
+		7E855F2F1F53D54E00169A5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E855F361F53D58300169A5A /* CustomSizeModalBaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomSizeModalBaseController.h; sourceTree = "<group>"; };
+		7E855F371F53D58300169A5A /* CustomSizeModalBaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomSizeModalBaseController.m; sourceTree = "<group>"; };
+		7E855F381F53D58300169A5A /* CustomSizeModalController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomSizeModalController.h; sourceTree = "<group>"; };
+		7E855F391F53D58300169A5A /* CustomSizeModalController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomSizeModalController.m; sourceTree = "<group>"; };
+		7E855F3A1F53D58300169A5A /* TransitorHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitorHelper.h; sourceTree = "<group>"; };
+		7E855F3B1F53D58300169A5A /* TransitorHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitorHelper.m; sourceTree = "<group>"; };
+		7E855F3C1F53D58300169A5A /* UICustomTransitionOption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICustomTransitionOption.h; sourceTree = "<group>"; };
+		7E855F4E1F53E1A500169A5A /* CustomModalTransition.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CustomModalTransition.podspec; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7E855F271F53D54D00169A5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7E855F211F53D54D00169A5A = {
+			isa = PBXGroup;
+			children = (
+				7E855F4E1F53E1A500169A5A /* CustomModalTransition.podspec */,
+				7E855F2D1F53D54D00169A5A /* CustomModalTransition */,
+				7E855F2C1F53D54D00169A5A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7E855F2C1F53D54D00169A5A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7E855F2B1F53D54D00169A5A /* CustomModalTransition.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7E855F2D1F53D54D00169A5A /* CustomModalTransition */ = {
+			isa = PBXGroup;
+			children = (
+				7E855F361F53D58300169A5A /* CustomSizeModalBaseController.h */,
+				7E855F371F53D58300169A5A /* CustomSizeModalBaseController.m */,
+				7E855F381F53D58300169A5A /* CustomSizeModalController.h */,
+				7E855F391F53D58300169A5A /* CustomSizeModalController.m */,
+				7E855F3A1F53D58300169A5A /* TransitorHelper.h */,
+				7E855F3B1F53D58300169A5A /* TransitorHelper.m */,
+				7E855F3C1F53D58300169A5A /* UICustomTransitionOption.h */,
+				7E855F2E1F53D54E00169A5A /* CustomModalTransition.h */,
+				7E855F2F1F53D54E00169A5A /* Info.plist */,
+			);
+			path = CustomModalTransition;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		7E855F281F53D54D00169A5A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E855F3F1F53D58300169A5A /* CustomSizeModalController.h in Headers */,
+				7E855F411F53D58300169A5A /* TransitorHelper.h in Headers */,
+				7E855F431F53D58300169A5A /* UICustomTransitionOption.h in Headers */,
+				7E855F301F53D54E00169A5A /* CustomModalTransition.h in Headers */,
+				7E855F3D1F53D58300169A5A /* CustomSizeModalBaseController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		7E855F2A1F53D54D00169A5A /* CustomModalTransition */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E855F331F53D54E00169A5A /* Build configuration list for PBXNativeTarget "CustomModalTransition" */;
+			buildPhases = (
+				7E855F261F53D54D00169A5A /* Sources */,
+				7E855F271F53D54D00169A5A /* Frameworks */,
+				7E855F281F53D54D00169A5A /* Headers */,
+				7E855F291F53D54D00169A5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CustomModalTransition;
+			productName = CustomModalTransition;
+			productReference = 7E855F2B1F53D54D00169A5A /* CustomModalTransition.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7E855F221F53D54D00169A5A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Ilya Dolgopolov";
+				TargetAttributes = {
+					7E855F2A1F53D54D00169A5A = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 9W9Q3ACJBX;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 7E855F251F53D54D00169A5A /* Build configuration list for PBXProject "CustomModalTransition" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7E855F211F53D54D00169A5A;
+			productRefGroup = 7E855F2C1F53D54D00169A5A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7E855F2A1F53D54D00169A5A /* CustomModalTransition */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7E855F291F53D54D00169A5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E855F4F1F53E1A500169A5A /* CustomModalTransition.podspec in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7E855F261F53D54D00169A5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E855F3E1F53D58300169A5A /* CustomSizeModalBaseController.m in Sources */,
+				7E855F401F53D58300169A5A /* CustomSizeModalController.m in Sources */,
+				7E855F421F53D58300169A5A /* TransitorHelper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		7E855F311F53D54E00169A5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7E855F321F53D54E00169A5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7E855F341F53D54E00169A5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 9W9Q3ACJBX;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CustomModalTransition/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = llodi.CustomModalTransition;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		7E855F351F53D54E00169A5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 9W9Q3ACJBX;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CustomModalTransition/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = llodi.CustomModalTransition;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7E855F251F53D54D00169A5A /* Build configuration list for PBXProject "CustomModalTransition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E855F311F53D54E00169A5A /* Debug */,
+				7E855F321F53D54E00169A5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E855F331F53D54E00169A5A /* Build configuration list for PBXNativeTarget "CustomModalTransition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E855F341F53D54E00169A5A /* Debug */,
+				7E855F351F53D54E00169A5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7E855F221F53D54D00169A5A /* Project object */;
+}
