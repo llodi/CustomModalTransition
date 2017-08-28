@@ -9,7 +9,7 @@ spec.social_media_url = "http://twitter.com/lllodi"
 
 spec.platform = :ios, "8.0"
 spec.requires_arc = true
-spec.source = { git: "https://github.com/llodi/CustomModalTransition.git", tag: "v#{spec.version}", submodules: true }
-spec.source_files = "CustomModalTransition/**/*.{h,swift}"
+spec.source = { git: "https://github.com/llodi/CustomModalTransition.git", tag: "v#{spec.version}" }
+spec.source_files = "CustomModalTransition/*.{h}"
 
 end
