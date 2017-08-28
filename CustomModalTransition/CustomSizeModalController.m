@@ -47,12 +47,12 @@
     CGFloat y = 0;
 
     switch (self.option) {
-        case UICustomTransitionCentrallyOption:
+        case UICustomTransitionOptionCenter:
             width = width - (self.horizontalInsets * 2);
             frameHeight = self.viewHeight;
             y = height / 2 - (self.viewHeight / 2);
             break;
-        case UICustomTransitionFromBottomOption:
+        case UICustomTransitionOptionBottom:
             width = width - (self.horizontalInsets * 2);
             frameHeight = self.viewHeight;
             y = height - self.viewHeight - self.horizontalInsets;

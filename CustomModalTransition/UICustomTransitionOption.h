@@ -10,8 +10,8 @@
 #define UICustomTransitionOption_h
 
 typedef NS_ENUM(NSUInteger, UICustomTransitionOption) {
-    UICustomTransitionFromBottomOption,
-    UICustomTransitionCentrallyOption
+    UICustomTransitionOptionBottom,
+    UICustomTransitionOptionCenter
 };
 
 #endif /* UICustomTransitionOption_h */

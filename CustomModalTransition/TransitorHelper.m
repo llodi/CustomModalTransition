@@ -63,11 +63,11 @@
     NSTimeInterval animationDuration = [self transitionDuration:transitionContext];
     
     switch (self.option) {
-        case UICustomTransitionCentrallyOption:
+        case UICustomTransitionOptionCenter:
             controller.view.frame = finalFrame;//initialFrame;
             controller.view.transform = CGAffineTransformMakeScale(0, 0);
             break;
-        case UICustomTransitionFromBottomOption:
+        case UICustomTransitionOptionBottom:
             controller.view.frame = initialFrame;
             break;
         default:
@@ -78,10 +78,10 @@
     [UIView animateKeyframesWithDuration:animationDuration delay:0 options:0 animations:^{
         
         switch (self.option) {
-            case UICustomTransitionCentrallyOption:
+            case UICustomTransitionOptionCenter:
                 controller.view.transform = CGAffineTransformIdentity;
                 break;
-            case UICustomTransitionFromBottomOption:
+            case UICustomTransitionOptionBottom:
                 controller.view.frame = finalFrame;
                 break;
             default:
