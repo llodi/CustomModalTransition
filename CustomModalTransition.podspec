@@ -10,6 +10,8 @@ spec.social_media_url = "http://twitter.com/lllodi"
 spec.platform = :ios, "8.0"
 spec.requires_arc = true
 spec.source = { git: "https://github.com/llodi/CustomModalTransition.git", tag: "v#{spec.version}" }
-spec.source_files = "CustomModalTransition/*.{h}"
+spec.public_header_files = 'CustomModalTransition/*.h'
+spec.source_files = "CustomModalTransition/*.{h,m}"
+spec.frameworks    = 'UIKit'
 
 end
