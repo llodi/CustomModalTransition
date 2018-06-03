@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4CCDAEE120C429DE00FE16D8 /* DimmingView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CCDAEDF20C429DD00FE16D8 /* DimmingView.h */; };
+		4CCDAEE220C429DE00FE16D8 /* DimmingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CCDAEE020C429DD00FE16D8 /* DimmingView.m */; };
 		7E855F301F53D54E00169A5A /* CustomModalTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E855F2E1F53D54E00169A5A /* CustomModalTransition.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7E855F3D1F53D58300169A5A /* CustomSizeModalBaseController.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E855F361F53D58300169A5A /* CustomSizeModalBaseController.h */; };
 		7E855F3E1F53D58300169A5A /* CustomSizeModalBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E855F371F53D58300169A5A /* CustomSizeModalBaseController.m */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4CCDAEDF20C429DD00FE16D8 /* DimmingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DimmingView.h; sourceTree = "<group>"; };
+		4CCDAEE020C429DD00FE16D8 /* DimmingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DimmingView.m; sourceTree = "<group>"; };
 		7E855F2B1F53D54D00169A5A /* CustomModalTransition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CustomModalTransition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E855F2E1F53D54E00169A5A /* CustomModalTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomModalTransition.h; sourceTree = "<group>"; };
 		7E855F2F1F53D54E00169A5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -63,6 +67,8 @@
 		7E855F2D1F53D54D00169A5A /* CustomModalTransition */ = {
 			isa = PBXGroup;
 			children = (
+				4CCDAEDF20C429DD00FE16D8 /* DimmingView.h */,
+				4CCDAEE020C429DD00FE16D8 /* DimmingView.m */,
 				7E855F361F53D58300169A5A /* CustomSizeModalBaseController.h */,
 				7E855F371F53D58300169A5A /* CustomSizeModalBaseController.m */,
 				7E855F381F53D58300169A5A /* CustomSizeModalController.h */,
@@ -86,6 +92,7 @@
 				7E855F3F1F53D58300169A5A /* CustomSizeModalController.h in Headers */,
 				7E855F411F53D58300169A5A /* TransitorHelper.h in Headers */,
 				7E855F431F53D58300169A5A /* UICustomTransitionOption.h in Headers */,
+				4CCDAEE120C429DE00FE16D8 /* DimmingView.h in Headers */,
 				7E855F301F53D54E00169A5A /* CustomModalTransition.h in Headers */,
 				7E855F3D1F53D58300169A5A /* CustomSizeModalBaseController.h in Headers */,
 			);
@@ -161,6 +168,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CCDAEE220C429DE00FE16D8 /* DimmingView.m in Sources */,
 				7E855F3E1F53D58300169A5A /* CustomSizeModalBaseController.m in Sources */,
 				7E855F401F53D58300169A5A /* CustomSizeModalController.m in Sources */,
 				7E855F421F53D58300169A5A /* TransitorHelper.m in Sources */,

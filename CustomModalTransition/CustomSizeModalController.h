@@ -22,4 +22,12 @@
                             withHorizontalInsets: (CGFloat) insets
                                       viewHeight: (CGFloat) height;
 
+- (instancetype) initWithPresentedViewController:(UIViewController *)presentedViewController
+                        presentingViewController:(UIViewController *)presentingViewController
+                                  dimmingView: (DimmingView *) dimmingView
+                                          option:(UICustomTransitionOption)option
+                            withHorizontalInsets: (CGFloat) insets
+                                      viewHeight: (CGFloat) height;
+
+
 @end

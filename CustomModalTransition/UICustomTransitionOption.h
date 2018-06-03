@@ -9,6 +9,8 @@
 #ifndef UICustomTransitionOption_h
 #define UICustomTransitionOption_h
 
+typedef void (^TapOnBackgroundViewHandler) (void);
+
 typedef NS_ENUM(NSUInteger, UICustomTransitionOption) {
     UICustomTransitionOptionBottom,
     UICustomTransitionOptionCenter

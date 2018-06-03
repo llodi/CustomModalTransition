@@ -8,6 +8,7 @@
 
 #import "TransitorHelper.h"
 #import "CustomSizeModalController.h"
+#import "DimmingView.h"
 
 @interface CustomModalTransition ()
 
@@ -16,6 +17,7 @@
 @property (nonatomic) UICustomTransitionOption option;
 @property (nonatomic) CGFloat horizontalInsets;
 @property (nonatomic) CGFloat viewHeight;
+@property (nonatomic) DimmingView *dimmingView;
 
 @end
 
@@ -27,6 +29,21 @@
 {
     self = [super init];
     if(self) {
+        self.option = option;
+        self.horizontalInsets = insets;
+        self.viewHeight = height;
+    }
+    return self;
+}
+
+- (instancetype) initWithOption: (UICustomTransitionOption) option
+                 dimmingView: (DimmingView *) dimmingView
+               horizontalInsets: (CGFloat) insets
+                     hiewHeight: (CGFloat) height
+{
+    self = [super init];
+    if(self) {
+        self.dimmingView = dimmingView;
         self.option = option;
         self.horizontalInsets = insets;
         self.viewHeight = height;
@@ -103,12 +120,24 @@
                                                           sourceViewController:(UIViewController *)source
 {
     self.isPresenting = YES;
-    CustomSizeModalController *customVC = [[CustomSizeModalController alloc]
-                                           initWithPresentedViewController:presented
-                                           presentingViewController:presenting
-                                           option:self.option
-                                           withHorizontalInsets:self.horizontalInsets
-                                           viewHeight:self.viewHeight];
+    CustomSizeModalController *customVC;
+    if (self.dimmingView) {
+        customVC = [[CustomSizeModalController alloc]
+                    initWithPresentedViewController:presented
+                    presentingViewController:presenting
+                    dimmingView:self.dimmingView
+                    option:self.option
+                    withHorizontalInsets:self.horizontalInsets
+                    viewHeight:self.viewHeight];
+    } else {
+        customVC = [[CustomSizeModalController alloc]
+                    initWithPresentedViewController:presented
+                    presentingViewController:presenting
+                    option:self.option
+                    withHorizontalInsets:self.horizontalInsets
+                    viewHeight:self.viewHeight];
+    }
+    
     return customVC;
 }
 

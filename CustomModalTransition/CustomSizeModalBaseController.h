@@ -7,7 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UICustomTransitionOption.h"
+
+@class DimmingView;
 
 @interface CustomSizeModalBaseController : UIPresentationController
 
+@property (nonatomic) CGFloat backgroundViewAlpha;
+@property (nonatomic) UIColor *backgroundViewColor;
+@property (nonatomic) TapOnBackgroundViewHandler onTapOnBackgroundView;
+
+- (instancetype) initWithPresentedViewController:(UIViewController *)presentedViewController
+                        presentingViewController:(UIViewController *)presentingViewController
+                                 dimmingView: (DimmingView *) dimView;
 @end

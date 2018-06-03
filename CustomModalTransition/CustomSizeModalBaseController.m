@@ -7,11 +7,11 @@
 //
 
 #import "CustomSizeModalBaseController.h"
-#import "UICustomTransitionOption.h"
+#import "DimmingView.h"
 
 @interface CustomSizeModalBaseController ()
 
-@property (nonatomic) UIView *dimmingView;
+@property (nonatomic) DimmingView *dimmingView;
 
 @end
 
@@ -22,7 +22,26 @@
     self = [super initWithPresentedViewController:presentedViewController presentingViewController:presentingViewController];
     
     if (self) {
-        [self setupDimmingView];
+        
+        self.dimmingView = [[DimmingView alloc] initWithBackgroundColor:[UIColor blackColor] dimmingAlpha:0.85 enabledTap:YES];
+        __weak typeof(self) weakSelf = self;
+        self.dimmingView.onBackgroundView = ^{
+            __strong typeof(self) strongSelf = weakSelf;
+            if (strongSelf) {
+                [strongSelf.presentingViewController dismissViewControllerAnimated:YES completion:nil];
+            }
+        };
+    }
+    
+    return self;
+}
+
+- (instancetype) initWithPresentedViewController:(UIViewController *)presentedViewController presentingViewController:(UIViewController *)presentingViewController dimmingView: (DimmingView *) dimView
+{
+    self = [super initWithPresentedViewController:presentedViewController presentingViewController:presentingViewController];
+    
+    if (self) {
+        self.dimmingView = dimView;
     }
     
     return self;
@@ -50,7 +69,7 @@
     [presentedViewController.transitionCoordinator
      animateAlongsideTransition:^(id<UIViewControllerTransitionCoordinatorContext>  _Nonnull context)
      {
-         [self.dimmingView setAlpha:0.85];
+         [self.dimmingView setAlpha: self.dimmingView.dimmingAlpha];
      } completion:nil];
 }
 
@@ -68,23 +87,27 @@
 
 #pragma mark - setup dimming view
 
-- (UIView *)dimmingView {
-    if(!_dimmingView) _dimmingView = [[UIView alloc] init];
-    return _dimmingView;
-}
+//- (UIView *)dimmingView {
+//    if(!_dimmingView) _dimmingView = [[DimmingView alloc] init];
+//    return _dimmingView;
+//}
 
-- (void) setupDimmingView {
-    self.dimmingView.translatesAutoresizingMaskIntoConstraints = NO;
-    self.dimmingView.backgroundColor = [UIColor blackColor];
-    self.dimmingView.alpha = 0.85;
-    
-    UITapGestureRecognizer *recognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTap:)];
-    [self.dimmingView addGestureRecognizer:recognizer];
-}
-
-- (void) handleTap: (UITapGestureRecognizer *) recognizer {
-    [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
-}
+//- (void) setupDimmingViewWithEnabledTap: (Boolean) tapEnabled {
+//    self.dimmingView.translatesAutoresizingMaskIntoConstraints = NO;
+//    self.dimmingView.backgroundColor = [UIColor blackColor];
+//    self.dimmingView.alpha = 0.85;
+//    if (tapEnabled) {
+//        UITapGestureRecognizer *recognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTap:)];
+//        [self.dimmingView addGestureRecognizer:recognizer];
+//    }
+//}
+//
+//- (void) handleTap: (UITapGestureRecognizer *) recognizer {
+//    if (self.onTapOnBackgroundView) {
+//        self.onTapOnBackgroundView();
+//    }
+//    [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
+//}
 
 
 @end

@@ -23,13 +23,27 @@
                             withHorizontalInsets: (CGFloat) insets
                                       viewHeight: (CGFloat) height
 {
-    
     self = [super initWithPresentedViewController:presentedViewController presentingViewController:presentingViewController];
     if(self) {
         self.option = option;
         self.horizontalInsets = insets;
         self.viewHeight = height;
         
+    }
+    return self;
+}
+- (instancetype) initWithPresentedViewController:(UIViewController *)presentedViewController
+                        presentingViewController:(UIViewController *)presentingViewController
+                                  dimmingView: (DimmingView *) dimmingView
+                                          option:(UICustomTransitionOption)option
+                            withHorizontalInsets: (CGFloat) insets
+                                      viewHeight: (CGFloat) height
+{
+    self = [super initWithPresentedViewController:presentedViewController presentingViewController:presentingViewController dimmingView: dimmingView];
+    if(self) {
+        self.option = option;
+        self.horizontalInsets = insets;
+        self.viewHeight = height;
     }
     return self;
 }
